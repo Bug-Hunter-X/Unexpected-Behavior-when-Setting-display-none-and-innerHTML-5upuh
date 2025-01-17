@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //This is the corrected code
+    let div = document.getElementById("myDiv");
+    div.style.display = "none";
+    div.innerHTML = "This text is invisible.";
+    div.style.display = "block";
+  </script>
+</body>
+</html>
