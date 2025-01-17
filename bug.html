@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //This is the buggy code
+    document.getElementById("myDiv").style.display = "none";
+    document.getElementById("myDiv").innerHTML = "This text is invisible.";
+  </script>
+</body>
+</html>
